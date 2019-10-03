@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/appBackground">
+
+    <ImageView
+        android:id="@+id/fragment_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tv_frag_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSubText"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/fragment_img"/>
+
+    <TextView
+        android:id="@+id/tv_frag_extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSubText"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/tv_frag_name"/>
+
+    <TextView
+        android:id="@+id/tv_frag_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/tv_frag_extra"/>
+</RelativeLayout>
